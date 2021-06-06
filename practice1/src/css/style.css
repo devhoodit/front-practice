@@ -130,10 +130,10 @@ ul {
 .nav__btn {
     height: 50px;
     cursor: default;
-    padding-left: 30px;
 }
 
 .nav__link {
+    padding-left: 30px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -300,4 +300,39 @@ section h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px;
+}
+
+
+
+
+/*---------------------------------------------<< footer >>------------------------------------------------------------*/
+
+.footer {
+    background-color: rgb(204, 204, 204);
+    height: 300px;
+    display: grid;
+    grid: center;
+}
+
+.footer a {
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+}
+
+
+.footer__container {
+    padding: 50px 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    font-family: var(--basic-font);
+}
+
+#footer-info {
+    
+}
+
+#footer-contributer {
+    float: right;
 }
