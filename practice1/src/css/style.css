@@ -59,6 +59,7 @@ a {
     justify-content: space-between;
     font-family: var(--title-font);
     font-size: 30px;
+    z-index: 100;
 }
 
 #nav-open-btn {
@@ -118,7 +119,7 @@ ul {
     left: -100%;
     transition: 1s ease;
     display: inline-block;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .nav__list {
@@ -207,7 +208,7 @@ ul {
 
 section {
     min-height: 100vh;
-    padding-top: 30px;
+    padding-top: 30px;;
 }
 
 section h1{
@@ -259,6 +260,7 @@ section h2 {
     padding-top: 50px;
     background-color: #7eebff;
     flex: auto;
+    padding-bottom: 100px;
 }
 
 .profile-content__box h3 {
@@ -284,6 +286,90 @@ section h2 {
     font-style: italic;
     font-weight: 400;
 }
+
+
+/*---------------------------------------------<< dive >>------------------------------------------------------------*/
+
+.diveinto {
+    background-color: #7eebff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sea__gradient {
+    background: linear-gradient(0deg, rgba(189,215,238,1) 0%, rgba(126,235,255,1) 100%);
+
+}
+.sea__surface {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    display: flex;
+}
+
+#sea-surface {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.sea__surface-dark {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(46,117,182,1) 100%);
+}
+
+.emoji__container {
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 100px;
+    top: 0;
+    left: 0;
+    
+}
+
+#dive_emoji {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    transition: 3s ease;
+    position: relative;
+} 
+
+.dive__content {
+    background-color: black;
+    flex-grow: 1;
+    width: 100%;
+    color: white;
+    padding-left: 80px;
+}
+
+.dive__content h1 {
+    font-style: italic;
+    font-size: 55px;
+    padding: 0;
+}
+
+.dive-contents__container {
+    padding-left: 70px;
+}
+
+.dive-contents__container pre {
+    font-family: var(--basic-font);
+    font-weight: 600;
+    font-size: 27px;
+}
+
+
 
 /*---------------------------------------------<< section - contact me >>------------------------------------------------------------*/
 

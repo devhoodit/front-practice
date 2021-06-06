@@ -8,6 +8,8 @@ window.onload = function () {
     let nav__container = document.getElementById("nav-container")
     let nav__vail = document.getElementById("nav__vail")
 
+    let dive_emoji = document.getElementById("dive_emoji")
+
 
 
     function nav_close() {
@@ -35,5 +37,20 @@ window.onload = function () {
       element.addEventListener("click", () => nav_close())  
     })
     
-
+    let animated = false
+    let emoji_height = 0
+    let ver_height
+    let scroll_y
+    window.addEventListener('scroll', function() {
+        if (!animated) {
+            if (dive_emoji.getBoundingClientRect().top < 100) {
+                console.log("Asdf")
+                animated = true
+                dive_emoji.style.transform = "translateY(700px) rotate(950deg)"
+                dive_emoji.style.color = "hsla(59, 93%, 67%, 1)"
+                dive_emoji.style.textShadow = "0 0 20px hsla(59, 93%, 67%, 1), 0 0 40px hsla(59, 93%, 67%, 1), 0 0 60px hsla(59, 93%, 67%, 1)"
+            }
+        }
+        
+    })
 }
