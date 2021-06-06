@@ -250,23 +250,23 @@ section h2 {
 }
 
 
-/*---------------------------------------------<< section - contect me >>------------------------------------------------------------*/
+/*---------------------------------------------<< section - contact me >>------------------------------------------------------------*/
 
-.contect-info__box {
+.contact-info__box {
     padding: 40px 20px 0px 40px;
     margin: 40px 80px 0px;
     border-top: 1px solid black ;
     height: 400px;
 }
 
-.contect-info__box p {
+.contact-info__box p {
     margin: 10px 0 10px;
     font-family: var(--title-font);
     font-weight: 650;
     font-size: 40px;
 }
 
-#contect-arrow {
+#contact-arrow {
     text-align: center;
     margin: auto;
     font-family: var(--title-font);
@@ -276,7 +276,7 @@ section h2 {
 
 
 
-.contect-me__box {
+.contact-me__box {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -285,16 +285,16 @@ section h2 {
     font-size: 60px;
 }
 
-.contect-me__box a:visited,
-.contect-me__box:active {
+.contact-me__box a:visited,
+.contact-me__box:active {
     color: black;
 }
 
-.contect-me__box a:hover {
+.contact-me__box a:hover {
 
 }
 
-.contect-me__box a {
+.contact-me__box a {
     background: linear-gradient(321deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 87%);
     background-clip: border-box;
     -webkit-background-clip: text;
