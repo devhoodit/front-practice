@@ -227,6 +227,11 @@ section h2 {
 
 /*---------------------------------------------<< section - profile >>------------------------------------------------------------*/
 
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
 .profile__box {
     width: 100%;
     display: flex;
@@ -234,6 +239,7 @@ section h2 {
     align-items: center;
     font-family: var(--title-font);
     font-size: 55px;
+    background: linear-gradient(0deg, rgba(126,235,255,1) 0%, rgba(255,255,255,0) 66%);
 }
 
 .profile__box p {
@@ -249,6 +255,35 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.profile-content__box {
+    padding-top: 50px;
+    background-color: #7eebff;
+    flex: auto;
+}
+
+.profile-content__box h3 {
+    font-family: var(--title-font);
+    color: black;
+    font-size: 50px;
+    padding-left: 70px;
+    margin: 20px;
+}
+
+.profile-content__box p {
+    font-family: var(--basic-font);
+    color: black;
+    margin: 0;
+    font-size: 30px;
+    padding-left: 130px;
+    padding-bottom: 7px;
+    font-weight: 500;
+}
+
+.profile-content {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+}
 
 /*---------------------------------------------<< section - contact me >>------------------------------------------------------------*/
 
