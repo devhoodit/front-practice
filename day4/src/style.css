@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    color: hsla(208, 100%, 66%, 1);
+    text-decoration: none;
+}
+
+a:active {
+    border-radius: inherit;
+    background-color: hsla(208, 100%, 66%, 0.41);
+    color: hsla(208, 100%, 57%, 1);
+}
+
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login__container {
+    height: 600px;
+    width: 400px;
+    border: 2px solid hsla(360, 0%, 66%, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.login__logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    background: linear-gradient(125deg, rgba(255,0,0,1) 0%, rgba(114,63,223,1) 44%, rgba(222,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login__login {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(321deg, rgba(255,0,0,1) 0%, rgba(114,63,223,1) 44%, rgba(222,0,255,1) 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login__sub-title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+}
+
+.login__help {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    padding: 4px 0px 0px 4px;
+}
+
+
+.login__tip {
+    width: 304px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.input__box {
+    box-sizing: content-box;
+    height: 40px;
+    width: 300px;
+    margin: 0;
+    padding: 0 5px 0;
+    outline: none;
+    border: 2px solid hsla(360, 0%, 66%, 1);
+    font-size: 17px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.input__box:focus {
+    border: 2px solid hsla(215, 100%, 66%, 1);
+}
+
+.input__box:valid {
+    border: 2px solid hsla(215, 100%, 66%, 1);
+}
+
+.input__box:focus + .place-holder {
+    color: hsla(215, 100%, 66%, 1);
+    font-size: 12px;
+    top: -7px;
+    left: 10px;
+}
+
+.input__box:valid + .place-holder {
+    color: hsla(215, 100%, 66%, 1);
+    font-size: 12px;
+    top: -7px;
+    left: 10px;
+}
+
+.input__container {
+    position: relative;
+}
+
+
+.place-holder {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 8px;
+    transition: .3s ease;
+    font-size: 17px;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    padding: 0px 2px 0px;
+    font-weight: 600;
+    color: rgb(104, 104, 104);
+}
+
+
+
+
+.login__tools {
+    display: inline-flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.create__account {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+}
+
+.create__account:hover {
+    background-color: hsla(208, 100%, 66%, 0.41);
+}
+
+.create__account a{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login__next {
+    width: 70px;
+    background-color: hsla(220, 100%, 54%, 1);
+    height: 40pxs;
+    border-radius: 5px;
+    -webkit-user-select: none;
+}
+
+.login__next a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.login__next a:active {
+    background-color: hsla(220, 100%, 40%, 1);
+    border-radius: inherit;
+}
